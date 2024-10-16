@@ -1,0 +1,11 @@
+services:
+  php-apache:
+    build: .
+    container_name: php-apache-container
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
+    restart: always
+
+# Optional: You can add other services here if needed in the future
